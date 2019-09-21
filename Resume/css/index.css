@@ -283,9 +283,68 @@ nav.navbar .nav-wrap a:hover {
   text-align: center;
   padding-bottom: 25px;
 }
+.heading{
+  width: 100%;
+  height: 100%;
+}
+.heading .project{
+  list-style: none;
+  margin-top: 50px;
+  height: 100%;
+  overflow: hidden;
+  box-shadow:  0px  0px 30px  black;
+  border:  1px solid wheat;
+
+}
+.heading .project div span{
+  font-family: 宋体;
+  font-weight: bold;
+  font-size: 40px;
+  background: linear-gradient(to right, red, blue);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.heading .project p{
+  margin: 0;
+  padding: 0!important;
+  line-height: normal;
+  font-size: 14px;
+}
+.heading ul li{
+  margin: 10px;
+  display: inline-block;
+  width: 48%;
+  padding: 10px;
+  text-align: left;
+}
+.heading ul li:nth-of-type(1){
+  border-bottom: 2px dashed black;
+  border-right: 2px dashed black;
+}
+.heading ul li:nth-of-type(2){
+  border-bottom: 2px dashed black;
+}
+.heading ul li:nth-of-type(3){
+  border-right: 2px dashed black;
+}
+.heading ul li strong{
+  font-size: 16px;
+}
+.heading ul li div{
+  float: left;
+  width: 50%;
+  /*border: 1px solid red;*/
+}
+
+
+
+
+
+
+
+
 .relation{
   list-style: none;
-
 }
 .relation li{
   display: inline-block;
@@ -299,7 +358,7 @@ nav.navbar .nav-wrap a:hover {
   width: 100px;
   height: 100px;
   position: absolute;
-  top: -150px;
+  top: 0px;
   left: 350px;
   border-radius: 25px;
   overflow: hidden;
@@ -328,7 +387,7 @@ nav.navbar .nav-wrap a:hover {
   width: 100px;
   height: 100px;
   position: absolute;
-  top: -150px;
+  top: 0px;
   left: 520px;
   border-radius: 25px;
   overflow: hidden;
@@ -339,7 +398,7 @@ nav.navbar .nav-wrap a:hover {
   width: 100px;
   height: 100px;
   position: absolute;
-  top: -150px;
+  top: 0px;
   left: 680px;
   border-radius: 25px;
   overflow: hidden;
@@ -347,18 +406,16 @@ nav.navbar .nav-wrap a:hover {
 }
 
 footer {
-  height: 150px;
+  height: 60px;
   background-color: #263238;
 }
 footer div{
-  font-size: 100px;
-  color: greenyellow;
   text-align: center;
-}
-footer div span:after{
-  content: '>';
+  cursor: default;
 }
 
-footer div span:before{
-  content: '<';
+footer div span{
+  line-height: 60px;
+  font-size: 20px;
+  color: greenyellow;
 }
